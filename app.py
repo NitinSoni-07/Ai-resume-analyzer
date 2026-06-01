@@ -280,7 +280,7 @@ if page == "🔍 Analyze Resume":
         if not uploaded_file:
             st.warning("⚠️ Please upload a resume first.")
         else:
-            with st.spinner("🤖 Claude is analyzing your resume..."):
+            with st.spinner("🤖 AI is analyzing your resume..."):
                 try:
                     resume_text = extract_resume_text(uploaded_file)
                     if len(resume_text) < 100:
